@@ -84,5 +84,7 @@ jobs:
   information:
     runs-on: ubuntu-latest
     steps:
+    - name: checkout
+      uses: actions/checkout@v4
     - name: to use s3
       uses: ./.github/deploy-s3
